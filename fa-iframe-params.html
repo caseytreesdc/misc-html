@@ -16,13 +16,12 @@ If you’ve already purchased and planted a tree on your property, you can get u
 <iframe id="fa-iframe" frameborder="0" style="height: 1000px; width: 100%;" src="https://www.tfaforms.com/5021682"></iframe>
 
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    console.log('<' + urlParams + '>')    
+    const urlParams = new URLSearchParams(window.location.search); 
     const faParamKey = 'tfa_2320='
     const url = 'https://www.tfaforms.com/5021682' + '?' + faParamKey + urlParams.toString().split('=')[1];
-    // console.log(document.getElementById('fa-iframe'))
-    if (urlParams) {
-        // console.log(url)
+    if (urlParams != '') {
+        console.log(url)
         document.getElementById('fa-iframe').src = url;
     }
 </script>
+
